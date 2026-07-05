@@ -1,32 +1,33 @@
-# Retrieval-Augmented Generation (RAG) - Learning Repository
+# 📚 Retrieval-Augmented Generation (RAG)
 
-> A structured repository documenting my journey of learning and implementing Retrieval-Augmented Generation (RAG) systems using Python and modern AI frameworks.
+> A structured, hands-on repository documenting my journey of learning and implementing Retrieval-Augmented Generation (RAG) systems from the ground up.
 
 ---
 
 ## 📖 About
 
-This repository contains hands-on implementations of the core building blocks required to build production-ready RAG applications.
+This repository contains practical implementations of the fundamental concepts required to build production-ready RAG applications.
 
-Each module focuses on a specific stage of the RAG pipeline, starting from data ingestion and parsing, followed by text chunking, embeddings, vector databases, retrieval, and complete RAG pipelines.
+Each module focuses on a specific stage of the RAG pipeline, helping me understand not only **how** to build RAG systems but also **why** each component is important.
 
-The goal of this repository is to understand **how RAG systems work internally** by implementing every component step by step.
+The repository will gradually evolve into a complete RAG reference covering document loading, text chunking, embeddings, vector databases, retrieval, and end-to-end conversational RAG applications.
 
 ---
 
-## 🎯 Learning Objectives
+## 🎯 Objectives
 
-- Understand the complete RAG workflow
-- Learn how different document formats are processed
-- Explore document chunking strategies
-- Generate embeddings for semantic search
+- Learn the complete RAG pipeline step by step
+- Understand document ingestion and parsing
+- Explore different text splitting strategies
+- Generate semantic embeddings
 - Work with vector databases
-- Build retrieval pipelines
-- Create end-to-end conversational RAG applications
+- Build efficient retrieval systems
+- Develop complete RAG applications
+- Learn industry-standard RAG practices
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
 ```text
 RAG/
@@ -45,52 +46,76 @@ RAG/
 │
 ├── 06-Conversational-RAG/
 │
-└── README.md
+├── assets/
+│
+├── README.md
+├── requirements.txt
+├── pyproject.toml
+├── uv.lock
+└── .gitignore
 ```
 
 ---
 
-# ✅ Progress
+# 📈 Learning Progress
 
 | Module | Status |
-|---------|--------|
-| Data Ingestion & Parsing | ✅ Completed |
-| Text Splitting | ⏳ In Progress |
-| Embeddings | ⏳ Planned |
-| Vector Stores | ⏳ Planned |
-| Retrievers | ⏳ Planned |
-| Complete RAG Pipeline | ⏳ Planned |
-| Conversational RAG | ⏳ Planned |
+|----------|--------|
+| ✅ Data Ingestion & Parsing | Completed |
+| ✅ Text Splitting | Completed |
+| ⏳ Embeddings | In Progress |
+| ⏳ Vector Stores | Planned |
+| ⏳ Retrievers | Planned |
+| ⏳ Complete RAG Pipeline | Planned |
+| ⏳ Conversational RAG | Planned |
+| ⏳ RAG Evaluation | Planned |
 
 ---
 
-# 🧠 Topics Covered
+# 📚 Modules
 
-## Data Ingestion
+## ✅ 00 - Data Ingestion & Parsing
 
-- Loading Text Files
-- Loading PDF Documents
-- Loading Word Documents
-- Loading CSV Files
-- Loading Excel Files
-- Loading JSON Files
+Topics Covered:
 
-## Parsing
+- Text File Loading
+- PDF Parsing
+- DOCX Parsing
+- CSV Parsing
+- Excel Parsing
+- JSON Parsing
+- LangChain Document Objects
+- Metadata Extraction
 
-- Structured Data
-- Semi-Structured Data
-- Unstructured Data
+---
 
-Future modules will cover:
+## ✅ 01 - Text Splitting
 
-- Text Chunking
-- Recursive Character Splitter
-- Token-Based Splitter
-- Embeddings
-- Vector Databases
+Topics Covered:
+
+- Character Text Splitter
+- Recursive Character Text Splitter
+- Token-Based Text Splitter
+- Chunk Size & Chunk Overlap
+- Splitting Strategies
+- Preparing Documents for Embeddings
+
+---
+
+## ⏳ Upcoming Modules
+
+- Embedding Models
+- Vector Databases (FAISS, ChromaDB)
 - Similarity Search
-- Retrieval Strategies
-- End-to-End RAG
+- Metadata Filtering
+- Retrievers
+- Hybrid Search
+- Parent Document Retriever
+- Multi Query Retriever
+- Context Compression
+- Complete RAG Pipeline
+- Conversational RAG
+- RAG Evaluation
 
 ---
 
@@ -100,50 +125,42 @@ Future modules will cover:
 - Jupyter Notebook
 - LangChain
 - Pandas
-- OpenPyXL
-- jq
 - PyPDF
 - python-docx
+- OpenPyXL
+- jq
+- uv
 
 ---
 
-# 🚀 Current Module
+# 🎯 Learning Roadmap
 
-## Data Ingestion & Parsing
-
-Implemented practical examples for:
-
-- Text Documents
-- PDF Documents
-- Word Documents (.docx)
-- CSV Files
-- Excel Files
-- JSON Files
-
-This module demonstrates how different data sources are loaded and converted into a common document format that can be used in a Retrieval-Augmented Generation (RAG) pipeline.
+- [x] Data Ingestion & Parsing
+- [x] Text Splitting
+- [ ] Embeddings
+- [ ] Vector Stores
+- [ ] Similarity Search
+- [ ] Retrievers
+- [ ] RAG Pipeline
+- [ ] Conversational RAG
+- [ ] RAG Evaluation
 
 ---
 
-# 📌 Future Work
+# 🚀 Purpose
 
-- Document Chunking
-- Embedding Models
-- FAISS
-- ChromaDB
-- Similarity Search
-- Metadata Filtering
-- Hybrid Search
-- Conversational Memory
-- End-to-End RAG Applications
+This repository serves as a practical learning journal for Retrieval-Augmented Generation (RAG).
+
+Instead of only building end-to-end applications, the focus is on understanding each building block of the RAG pipeline through hands-on implementation and experimentation.
+
+Every module contains practical notebooks, code examples, and explanations that build upon the previous concepts.
 
 ---
 
-# 📚 Purpose
+# 🤝 Contributions
 
-This repository is part of my AI Engineering learning journey and serves as a collection of practical implementations, experiments, and notes while exploring Retrieval-Augmented Generation.
-
-Each module builds upon the previous one, gradually progressing from basic document loading to complete production-style RAG systems.
+This repository is primarily intended for learning and experimentation. Suggestions, improvements, and discussions are always welcome.
 
 ---
 
-## ⭐ If you find this repository useful, feel free to star it!
+## ⭐ If you find this repository useful, consider giving it a star!
