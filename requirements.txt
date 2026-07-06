@@ -15,3 +15,8 @@ pdfminer
 pandas 
 openpyxl
 jq
+numpy
+matplotlib
+langchain-huggingface
+sentence-transformers
+langchain-openai
