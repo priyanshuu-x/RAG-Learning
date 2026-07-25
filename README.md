@@ -1,166 +1,113 @@
-# 📚 Retrieval-Augmented Generation (RAG)
+# RAG Learning
 
-> A structured, hands-on repository documenting my journey of learning and implementing Retrieval-Augmented Generation (RAG) systems from the ground up.
-
----
-
-## 📖 About
-
-This repository contains practical implementations of the fundamental concepts required to build production-ready RAG applications.
-
-Each module focuses on a specific stage of the RAG pipeline, helping me understand not only **how** to build RAG systems but also **why** each component is important.
-
-The repository will gradually evolve into a complete RAG reference covering document loading, text chunking, embeddings, vector databases, retrieval, and end-to-end conversational RAG applications.
+A hands-on repository for learning and implementing Retrieval-Augmented Generation (RAG) concepts from the ground up. This repository demonstrates the core building blocks of modern RAG systems, including document ingestion, parsing, embeddings, vector databases, and advanced retrieval strategies.
 
 ---
 
-## 🎯 Objectives
-
-- Learn the complete RAG pipeline step by step
-- Understand document ingestion and parsing
-- Explore different text splitting strategies
-- Generate semantic embeddings
-- Work with vector databases
-- Build efficient retrieval systems
-- Develop complete RAG applications
-- Learn industry-standard RAG practices
-
----
-
-# 📂 Repository Structure
+## Repository Structure
 
 ```text
-RAG/
+RAG
 │
-├── 00-Data-Ingestion-and-Parsing/
+├── 0-Data-Ingestion-and-Parsing
+│   ├── PDF Parsing
+│   ├── DOCX Parsing
+│   ├── CSV & Excel Parsing
+│   ├── JSON Parsing
+│   └── data/
 │
-├── 01-Text-Splitting/
+├── 1-VectorEmbeddings
+│   └── embedding.ipynb
 │
-├── 02-Embeddings/
+├── 2-Vector Stores
+│   ├── 1-chromadb.ipynb
+│   └── data/
 │
-├── 03-Vector-Stores/
+├── FAISS
+│   ├── faiss.ipynb
+│   └── faiss_index/
 │
-├── 04-Retrievers/
+├── Search-Strategies
+│   ├── Semantic-Chunking.py
+│   ├── Hybrid-Search.py
+│   ├── MMR.py
+│   ├── ReRanking.py
+│   ├── sample_document.txt
+│   └── requirements.txt
 │
-├── 05-RAG-Pipeline/
-│
-├── 06-Conversational-RAG/
-│
-├── assets/
-│
-├── README.md
+├── main.py
 ├── requirements.txt
-├── pyproject.toml
-├── uv.lock
-└── .gitignore
+└── pyproject.toml
 ```
 
 ---
 
-# 📈 Learning Progress
+## Features
 
-| Module | Status |
-|----------|--------|
-| ✅ Data Ingestion & Parsing | Completed |
-| ✅ Text Splitting | Completed |
-| ⏳ Embeddings | In Progress |
-| ⏳ Vector Stores | Planned |
-| ⏳ Retrievers | Planned |
-| ⏳ Complete RAG Pipeline | Planned |
-| ⏳ Conversational RAG | Planned |
-| ⏳ RAG Evaluation | Planned |
-
----
-
-# 📚 Modules
-
-## ✅ 00 - Data Ingestion & Parsing
-
-Topics Covered:
-
-- Text File Loading
-- PDF Parsing
-- DOCX Parsing
-- CSV Parsing
-- Excel Parsing
-- JSON Parsing
-- LangChain Document Objects
-- Metadata Extraction
+- Document ingestion from multiple file formats
+- PDF, DOCX, CSV, Excel, and JSON parsing
+- Recursive and semantic text chunking
+- Embedding generation using Ollama
+- ChromaDB vector database integration
+- FAISS vector search
+- Semantic search
+- Hybrid Search (Dense + BM25 Retrieval)
+- Maximum Marginal Relevance (MMR) Retrieval
+- Re-Ranking for improved retrieval quality
 
 ---
 
-## ✅ 01 - Text Splitting
-
-Topics Covered:
-
-- Character Text Splitter
-- Recursive Character Text Splitter
-- Token-Based Text Splitter
-- Chunk Size & Chunk Overlap
-- Splitting Strategies
-- Preparing Documents for Embeddings
-
----
-
-## ⏳ Upcoming Modules
-
-- Embedding Models
-- Vector Databases (FAISS, ChromaDB)
-- Similarity Search
-- Metadata Filtering
-- Retrievers
-- Hybrid Search
-- Parent Document Retriever
-- Multi Query Retriever
-- Context Compression
-- Complete RAG Pipeline
-- Conversational RAG
-- RAG Evaluation
-
----
-
-# 🛠 Tech Stack
+## Technologies Used
 
 - Python
-- Jupyter Notebook
 - LangChain
-- Pandas
-- PyPDF
-- python-docx
-- OpenPyXL
-- jq
-- uv
+- LangChain Community
+- LangChain Chroma
+- LangChain Ollama
+- ChromaDB
+- FAISS
+- Ollama
+- Nomic Embed Text
+- BM25 Retriever
 
 ---
 
-# 🎯 Learning Roadmap
+## Installation
 
-- [x] Data Ingestion & Parsing
-- [x] Text Splitting
-- [ ] Embeddings
-- [ ] Vector Stores
-- [ ] Similarity Search
-- [ ] Retrievers
-- [ ] RAG Pipeline
-- [ ] Conversational RAG
-- [ ] RAG Evaluation
+Clone the repository:
 
----
+```bash
+git clone https://github.com/priyanshuu-x/RAG-Learning.git
+```
 
-# 🚀 Purpose
+Navigate to the project directory:
 
-This repository serves as a practical learning journal for Retrieval-Augmented Generation (RAG).
+```bash
+cd RAG-Learning
+```
 
-Instead of only building end-to-end applications, the focus is on understanding each building block of the RAG pipeline through hands-on implementation and experimentation.
+Install the required dependencies:
 
-Every module contains practical notebooks, code examples, and explanations that build upon the previous concepts.
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-# 🤝 Contributions
+## Running the Examples
 
-This repository is primarily intended for learning and experimentation. Suggestions, improvements, and discussions are always welcome.
+Run any notebook or Python script from its respective directory.
+
+Example:
+
+```bash
+python Search-Strategies/Hybrid-Search.py
+```
+
+or open the notebooks directly in Jupyter Notebook or VS Code.
 
 ---
 
-## ⭐ If you find this repository useful, consider giving it a star!
+## License
+
+This repository is intended for educational purposes and hands-on learning of Retrieval-Augmented Generation (RAG).
