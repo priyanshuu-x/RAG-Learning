@@ -35,6 +35,12 @@ RAG
 │   ├── sample_document.txt
 │   └── requirements.txt
 │
+├── Query-Enhancement
+│   ├── Query-Expansion.py
+│   ├── Query-Decomposition.py
+│   ├── sample_document.txt
+│   └── requirements.txt
+│
 ├── main.py
 ├── requirements.txt
 └── pyproject.toml
@@ -50,10 +56,12 @@ RAG
 - Embedding generation using Ollama
 - ChromaDB vector database integration
 - FAISS vector search
-- Semantic search
+- Semantic Search
 - Hybrid Search (Dense + BM25 Retrieval)
 - Maximum Marginal Relevance (MMR) Retrieval
 - Re-Ranking for improved retrieval quality
+- Query Expansion for improving retrieval recall
+- Query Decomposition for breaking complex queries into simpler sub-queries
 
 ---
 
@@ -104,7 +112,13 @@ Example:
 python Search-Strategies/Hybrid-Search.py
 ```
 
-or open the notebooks directly in Jupyter Notebook or VS Code.
+or
+
+```bash
+python Query-Enhancement/Query-Expansion.py
+```
+
+You can also open the notebooks directly in Jupyter Notebook or VS Code.
 
 ---
 
