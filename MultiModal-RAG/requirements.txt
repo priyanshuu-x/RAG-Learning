@@ -1,0 +1,9 @@
+pymupdf
+transformers 
+torch 
+pillow 
+faiss-cpu 
+langchain-community 
+langchain-ollama 
+langchain-core 
+langchain-text-splitters
