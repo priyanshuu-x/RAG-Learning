@@ -1,6 +1,6 @@
 # RAG Learning
 
-A hands-on repository for learning and implementing Retrieval-Augmented Generation (RAG) concepts from the ground up. This repository demonstrates the core building blocks of modern RAG systems, including document ingestion, parsing, embeddings, vector databases, and advanced retrieval strategies.
+A hands-on repository for learning and implementing Retrieval-Augmented Generation (RAG) concepts from the ground up. This repository covers the complete RAG pipeline—from document ingestion and vector databases to advanced retrieval techniques and modern RAG architectures.
 
 ---
 
@@ -20,12 +20,16 @@ RAG
 │   └── embedding.ipynb
 │
 ├── 2-Vector Stores
-│   ├── 1-chromadb.ipynb
+│   ├── chromadb.ipynb
 │   └── data/
 │
 ├── FAISS
 │   ├── faiss.ipynb
 │   └── faiss_index/
+│
+├── MultiModal-RAG
+│
+├── Query-Enhancement
 │
 ├── Search-Strategies
 │   ├── Semantic-Chunking.py
@@ -35,16 +39,45 @@ RAG
 │   ├── sample_document.txt
 │   └── requirements.txt
 │
-├── Query-Enhancement
-│   ├── Query-Expansion.py
-│   ├── Query-Decomposition.py
-│   ├── sample_document.txt
-│   └── requirements.txt
-│
 ├── main.py
+│
 ├── requirements.txt
-└── pyproject.toml
+├── pyproject.toml
+└── README.md
 ```
+
+---
+
+## Topics Covered
+
+### Data Processing
+- PDF Parsing
+- DOCX Parsing
+- CSV & Excel Parsing
+- JSON Parsing
+
+### Embeddings & Vector Databases
+- Ollama Embeddings
+- ChromaDB
+- FAISS
+
+### Chunking
+- Recursive Chunking
+- Semantic Chunking
+
+### Retrieval Strategies
+- Semantic Search
+- Hybrid Search
+- Maximum Marginal Relevance (MMR)
+- Re-Ranking
+
+### Query Optimization
+- Query Enhancement Techniques
+
+### Advanced RAG Architectures
+- Agentic RAG
+- Corrective RAG (CRAG)
+- Multimodal RAG
 
 ---
 
@@ -56,12 +89,10 @@ RAG
 - Embedding generation using Ollama
 - ChromaDB vector database integration
 - FAISS vector search
-- Semantic Search
+- Semantic search
 - Hybrid Search (Dense + BM25 Retrieval)
 - Maximum Marginal Relevance (MMR) Retrieval
 - Re-Ranking for improved retrieval quality
-- Query Expansion for improving retrieval recall
-- Query Decomposition for breaking complex queries into simpler sub-queries
 
 ---
 
@@ -69,32 +100,31 @@ RAG
 
 - Python
 - LangChain
-- LangChain Community
-- LangChain Chroma
-- LangChain Ollama
+- LangGraph
+- Ollama
 - ChromaDB
 - FAISS
-- Ollama
 - Nomic Embed Text
 - BM25 Retriever
+- Tavily Search API
 
 ---
 
 ## Installation
 
-Clone the repository:
+Clone the repository
 
 ```bash
 git clone https://github.com/priyanshuu-x/RAG-Learning.git
 ```
 
-Navigate to the project directory:
+Navigate into the project
 
 ```bash
 cd RAG-Learning
 ```
 
-Install the required dependencies:
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -102,23 +132,29 @@ pip install -r requirements.txt
 
 ---
 
-## Running the Examples
+## Running Examples
 
-Run any notebook or Python script from its respective directory.
+Run any Python file directly.
 
-Example:
-
-```bash
-python Search-Strategies/Hybrid-Search.py
-```
-
-or
+### Semantic Chunking
 
 ```bash
-python Query-Enhancement/Query-Expansion.py
+python Semantic-Chunking.py
 ```
 
-You can also open the notebooks directly in Jupyter Notebook or VS Code.
+### Agentic RAG
+
+```bash
+python Agentic-RAG.py
+```
+
+### Corrective RAG
+
+```bash
+python Corrective-RAG.py
+```
+
+or open the notebooks directly in Jupyter Notebook or VS Code.
 
 ---
 
